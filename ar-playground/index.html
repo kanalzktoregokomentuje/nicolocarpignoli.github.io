@@ -18,7 +18,7 @@
                 <a-box position='0 0.5 0' color="red"></a-box>
             </a-marker>
 
-            <a-marker type='barcode' value='6' emitter emitevents="true" raycaster="objects: #animated-model" cursor="rayOrigin: mouse">
+            <a-marker type='barcode' value='6' emitter emitevents="true" cursor="fuse: false; rayOrigin: mouse">
                 <a-entity
                     id="animated-model"
                     gltf-model="#animated-asset"
