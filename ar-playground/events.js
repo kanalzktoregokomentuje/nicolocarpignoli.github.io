@@ -8,8 +8,8 @@ AFRAME.registerComponent('markerhandler', {
         animatedMarker.addEventListener('click', function(ev){
             console.log('event', ev.detail)
 
-            const cursor = ev && ev.detail && ev.detail.cursorEl;
-            if (cursor) {
+            const cursorEl = ev && ev.detail && ev.detail.cursorEl;
+            if (cursorEl === animatedMarker) {
                 // const scale = aEntity.getAttribute('scale');
                 // Object.keys(scale).forEach((key) => scale[key] = scale[key] + 1);
                 // aEntity.setAttribute('scale', scale);
