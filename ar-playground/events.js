@@ -4,8 +4,9 @@ AFRAME.registerComponent('markerhandler', {
         const animatedMarker = document.querySelector("#animated-marker");
         const aEntity = document.querySelector("#animated-model");
 
+        console.log('this.el', this.el)
         // every click, we make our model grow in size :)
-        animatedMarker.addEventListener('click', function(ev){
+        this.el.addEventListener('click', function(ev){
             console.log('event', ev.detail)
 
             const cursorEl = ev && ev.detail && ev.detail.cursorEl;
