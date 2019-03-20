@@ -1,11 +1,16 @@
+// register our component
 AFRAME.registerComponent('click-listener', {
     init: function() {
-        const aEntity = document.querySelector('#animated-model');
         this.el.addEventListener('click', function(ev){
-            const clickedObject = ev.detail.intersection.object;
-            console.log(clickedObject)
-            if (clickedObject && aEntity === clickedObject.parent.el) {
-                console.log('ho cliccato la figura')
-            }
+            console.log(ev.detail)
+
+            // if (animatedMarker.object3D.visible == true && ev.detail.cursorEl) {
+            //     // const entity = document.querySelector('#animated-model');
+            //     // const scale = entity.getAttribute('scale');
+            //     // Object.keys(scale).forEach((key) => scale[key] = scale[key] + 1);
+
+            //     // // every click, we make our model grow in size
+            //     entity.setAttribute('scale', scale);
+            // }
         });
 }});
