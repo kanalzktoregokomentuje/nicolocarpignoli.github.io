@@ -19,7 +19,7 @@
             </a-marker>
 
             <a-marker type='barcode' value='6'>
-                <a-entity cursor-listener
+                <a-entity click-listener
                     id="animated-model"
                     gltf-model="#animated-asset"
                     scale="2">
@@ -27,9 +27,7 @@
             </a-marker>
 
             <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
-            <a-entity camera>
-                <a-entity cursor="rayOrigin: mouse; fuse: false; objects: #animated-model"></a-entity>
-            </a-entity>
+            <a-entity camera></a-entity>
             </a-scene>
     </body>
 </html>
