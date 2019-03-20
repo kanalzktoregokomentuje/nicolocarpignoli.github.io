@@ -1,5 +1,6 @@
 AFRAME.registerComponent('click-listener', {
     init: function() {
+        console.log(this.el)
         // every click, we make our model grow in size :)
         this.el.addEventListener('click', function(ev){
             // const scale = aEntity.getAttribute('scale');
@@ -8,7 +9,3 @@ AFRAME.registerComponent('click-listener', {
             console.log('click a frame', ev.detail)
         });
 }});
-
-document.querySelector('#animated-model').addEventListener((ev) => {
-    console.log('click classico', ev)
-});
