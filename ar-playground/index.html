@@ -10,7 +10,6 @@
     <body style='margin : 0px; overflow: hidden;'>
         <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
         <a-scene click-listener embedded
-            raycaster="objects: #animated-model"
             cursor="fuse: false; rayOrigin: mouse"
             arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
             <a-assets>
