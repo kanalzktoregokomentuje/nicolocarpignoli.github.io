@@ -1,4 +1,4 @@
-AFRAME.registerComponent('emitter', {
+AFRAME.registerComponent('cursor-listener', {
 
     init: function() {
         // every click, we make our model grow in size :)
@@ -6,6 +6,6 @@ AFRAME.registerComponent('emitter', {
             // const scale = aEntity.getAttribute('scale');
             // Object.keys(scale).forEach((key) => scale[key] = scale[key] + 1);
             // aEntity.setAttribute('scale', scale);
-            console.log('CLICCCKOOONEEE')
+            console.log('click')
         });
 }});
