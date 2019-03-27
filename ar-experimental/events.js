@@ -2,7 +2,8 @@
 AFRAME.registerComponent('click-listener', {
     init: function() {
         this.el.addEventListener('click', function(ev){
-            console.log(ev.detail)
+            console.log('deatil', ev.detail);
+            console.log(ev.detail.cursorEl, ev.detail.targetEl)
 
             // if (animatedMarker.object3D.visible == true && ev.detail.cursorEl) {
             //     // const entity = document.querySelector('#animated-model');
