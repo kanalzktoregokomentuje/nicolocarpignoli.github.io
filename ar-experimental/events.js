@@ -1,9 +1,10 @@
 // register our component
-AFRAME.registerComponent('click-listener', {
+AFRAME.registerComponent('cursor-listener', {
     init: function() {
         this.el.addEventListener('click', function(ev){
-            console.log('deatil', ev.detail);
-            console.log(ev.detail.cursorEl, ev.detail.targetEl)
+            console.log('deatil', ev.detail.intersection);
+            console.log('cursorEl', ev.detail.cursorEl);
+            console.log('targetEl', ev.detail.targetEl);
 
             // if (animatedMarker.object3D.visible == true && ev.detail.cursorEl) {
             //     // const entity = document.querySelector('#animated-model');
