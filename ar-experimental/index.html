@@ -20,10 +20,14 @@
         <a-assets>
             <a-asset-item 
                 id="animated-asset" 
-                src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-experimental/models/CesiumMan.gltf"></a-asset-item>
+                src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-experimental/models/CesiumMan.gltf">
+            </a-asset-item>
         </a-assets>
 
-        <a-marker id="animated-marker" type='barcode' value='6' size=10>
+        <a-marker id="animated-marker" 
+            type='pattern' 
+            preset="custom" 
+            url="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-experimental/pattern.patt">
             <a-entity
                 class="clickable"
                 gltf-model="#animated-asset"
