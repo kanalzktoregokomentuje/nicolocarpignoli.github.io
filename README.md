@@ -4,17 +4,21 @@
 
 ## Demos
 
-- [AR.js basic example (`ar-playground/`)](https://github.com/nicolocarpignoli/nicolocarpignoli.github.io/tree/master/ar-playground)
+- [AR.js basic example (`ar-playground/`)](https://github.com/nicolocarpignoli/nicolocarpignoli.github.io/tree/master/ar-playground) Basic example using barcode markers. Start from here if you have never tried AR.js
 
 - [AR.js working click events (`ar-click-events/`)](https://github.com/nicolocarpignoli/nicolocarpignoli.github.io/tree/master/ar-click-events)
+Working example of click events handling. Disclaimer: not production ready, it fits good for experiments but also for simple applications. Clicks work very well on the centre of the screen, not so well on angles. It is suggested to use this approach for cases where only one marker is displayed at a time. You can start from this example and try to tune parameters of marker size and event detail data to meet your application requirements.
 
 - [AR.js experimental (not stable) (`ar-experimental/`)](https://github.com/nicolocarpignoli/nicolocarpignoli.github.io/tree/master/ar-experimental)
+I use this folder for experiments, also as a sandbox for snippets for my Medium articles. Don't use this code, really :)
 
 ## Articles
 
 * [Introduction to AR.js](https://medium.com/chialab-open-source/ar-js-the-simpliest-way-to-get-cross-browser-ar-on-the-web-8f670dd45462)
 * [Deliver AR.js content only with a QR-Code](https://medium.com/chialab-open-source/how-to-deliver-ar-on-the-web-only-with-a-qr-code-e24b7b61f8cb)
 * [Handle click events with AR.js](https://medium.com/chialab-open-source/how-to-handle-click-events-on-ar-js-58fcacb77c4)
+
+[Check my Medium page/follow me](https://medium.com/@nicolcarpignoli). More articles upcoming.
 
 ### Other useful links
 
