@@ -12,27 +12,13 @@
     
     <body style='margin : 0px; overflow: hidden;'>
         <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
-        <a-scene emitevents="true" cursor-listener
-            cursor="fuse: false; rayOrigin: mouse" 
-            raycaster="objects: .clickable" 
-            embedded 
-            arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
-        <a-assets>
-            <a-asset-item 
-                id="animated-asset" 
-                src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-experimental/models/CesiumMan.gltf">
-            </a-asset-item>
-        </a-assets>
+        <a-scene arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 
-        <a-marker id="animated-marker" 
+        <a-marker
             type='pattern' 
             preset="custom" 
             url="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-experimental/pattern.patt">
-            <a-entity
-                class="clickable"
-                gltf-model="#animated-asset"
-                scale="2">
-            </a-entity>
+            <a-image src="../ar-click-events/06-barcode.png">
         </a-marker>
 
         <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
