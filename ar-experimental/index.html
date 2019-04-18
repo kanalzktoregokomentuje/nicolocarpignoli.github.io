@@ -3,26 +3,27 @@
     <head>
         <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     </head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
     <script src="https://rawgit.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
-    <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
-    
-    <!-- import events.js script -->
-    <script src="https://rawgit.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-experimental/events.js"></script>
+    <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>    
+    <script src="./events.js"></script>
     
     <body style='margin : 0px; overflow: hidden;'>
-        <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
         <a-scene arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
-
-        <a-marker
-            type='barcode' 
-            value="6" >
-            <a-image src="../ar-click-events/06-barcode.png">
-            </a-image>
-        </a-marker>
-
-        <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
-        <a-entity camera></a-entity>
+            <a-marker
+                type='barcode' 
+                value="6">
+                <a-image 
+                    src="../ar-click-events/06-barcode.png">
+                </a-image>
+            </a-marker>
+            <a-entity camera></a-entity>
         </a-scene>
+        <div class="buttons">
+            <button id="picture">
+                <i class="material-icons">&#xE3AF;</i>
+            </button>
+        </div>
     </body>
 </html>
