@@ -1,7 +1,5 @@
 AFRAME.registerComponent('markerhandler', {
     init: () => {
-        const camera = document.querySelector('#camera');
-        console.log('Got camera', camera);
         document.querySelector('body').addEventListener('gestureend', (event) => {
             let scale = 0;
             if (event.scale < 1.0) {
@@ -15,7 +13,9 @@ AFRAME.registerComponent('markerhandler', {
         }, false);
 }});
 
-const setCurrentZoom = (element, scale) => {
-    const current = element.getAttribute('camera').zoom;
-    return element.setAttribute('camera', {zoom: current + scale});
+const setCurrentZoom = (scale) => {
+    const element = document.getElementById('camera');
+    const camera = element.getAttribute('camera');
+    camera.zoom = camera.zoom + scale;
+    return element.setAttribute('camera', camera);
 };
