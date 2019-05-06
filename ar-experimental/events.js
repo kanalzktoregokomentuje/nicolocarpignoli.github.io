@@ -15,13 +15,7 @@ AFRAME.registerComponent('markerhandler', {
         }, false);
 }});
 
-const getCurrentZoom = (element) => {
-    let zoom = element.getAttribute('camera');
-    zoom = zoom.split('zoom: ') && zoom.split('zoom: ')[1];
-    return zoom;
-};
-
 const setCurrentZoom = (element, scale) => {
-    const current = getCurrentZoom(element);
-    return element.setAttribute('camera', `camera: ${current + scale};`);
+    const current = element.getAttribute('camera').zoom;
+    return element.setAttribute('camera', {zoom: current + scale});
 };
