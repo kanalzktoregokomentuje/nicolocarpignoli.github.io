@@ -9,7 +9,7 @@ AFRAME.registerComponent('markerhandler', {
                 // User moved fingers further apart
                 scale--;
             }
-            return setZoom(camera, scale);
+            return setZoom(scale);
         }, false);
 }});
 
