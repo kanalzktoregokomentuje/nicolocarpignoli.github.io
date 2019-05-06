@@ -12,13 +12,14 @@
     <body style='margin : 0px; overflow: hidden;'>
         <a-scene arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
             <a-marker
+                markerhandler
                 type='barcode' 
                 value="6">
                 <a-image 
                     src="../ar-click-events/06-barcode.png">
                 </a-image>
             </a-marker>
-            <a-entity id="camera" camera="zoom: 1"></a-entity>
+            <a-entity id="camera" camera="zoom: 1;"></a-entity>
         </a-scene>
         <div class="buttons">
             <button id="picture">
