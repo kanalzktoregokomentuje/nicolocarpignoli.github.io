@@ -1,5 +1,5 @@
 AFRAME.registerComponent('markerhandler', {
-    init: function() {
+    init: () => {
         const camera = document.querySelector('#camera');
         console.log('Got camera', camera);
         document.querySelector('body').addEventListener('gestureend', (event) => {
