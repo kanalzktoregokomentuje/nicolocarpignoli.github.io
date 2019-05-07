@@ -1,0 +1,8 @@
+Still not possible to easily tell 'when clicked on a-entity' on a-frame 0.9.0:
+3 possibilities:
+
+- ray intersection (on a scene), using rayintersect prop: difficult to calculate intersection.
+    Intesrected object outputted on event is not reliable. Miss a lot of clicks
+- do something when clicked on all a-scene and check for visible markers (marker.object3D.visible). ok if click has not to be
+    over 3D model and if app has to manage only one marker at time
+- add ray origin intersection on specific marker element: not reliable (my old method)
