@@ -1,2 +1,3 @@
-const Zlib = require("./inflate.js").Zlib;
+import { Zlib } from "./inflate.js";
+
 window.Zlib = Zlib;
