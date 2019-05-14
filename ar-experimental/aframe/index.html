@@ -8,8 +8,11 @@
     <body style='margin : 0px; overflow: hidden;'>
         <a-scene>
 
+                <a-assets>
+                    <a-asset-item id="animated-asset" src="../models/butterflies.fbx"></a-asset-item>
+                </a-assets>
 
-            <a-entity fbx-model="src: url(../models/butterflies.fbx);"></a-entity>
+            <a-entity fbx-model="#animated-asset"></a-entity>
           </a-scene>
     </body>
 </html>
