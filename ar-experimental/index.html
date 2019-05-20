@@ -7,34 +7,21 @@
     <script src="https://rawgit.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
     <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
     
-    
     <body style='margin : 0px; overflow: hidden;'>
         <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
-        <a-assets>
-            <a-asset-item id="animated-asset" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-experimental/models/butterf.glb"></a-asset-item>
-        </a-assets>
-
-
+       
         <a-marker type='barcode' value='7'>
-            <a-entity
-                scale="0.5 0.5 0.5" 
-                animation-mixer="loop: repeat"
-                gltf-model='#animated-asset'
-                rotation="-90 0 0">
-            </a-entity>
-        </a-marker>
-
-        <a-marker id="animated-marker" type='barcode' value='6'>
-            <a-entity
+            <a-video 
+                src="https://www.quirksmode.org/html5/videos/big_buck_bunny.mp4" 
+                width="16" 
+                height="9" 
                 smooth="true" 
                 smoothCount="10" 
                 smoothTolerance="0.01" 
                 smoothThreshold="5"
-                scale="0.5 0.5 0.5" 
-                animation-mixer="loop: repeat"
-                gltf-model='#animated-asset'
-                rotation="-90 0 0">
-            </a-entity>
+                scale="2" 
+                >
+            </a-video>
         </a-marker>
 
         <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
