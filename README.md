@@ -17,7 +17,7 @@ I use this folder for experiments, also as a sandbox for snippets for my Medium 
 * [Introduction to AR.js](https://medium.com/@nicolcarpignoli/ar-js-the-simplest-way-to-get-cross-browser-augmented-reality-on-the-web-10cbc721debc)
 * [Deliver AR.js content only with a QR-Code](https://medium.com/@nicolcarpignoli/how-to-deliver-ar-on-the-web-only-with-a-qr-code-139bb90e82f1)
 * [Handle click events with AR.js](https://medium.com/@nicolcarpignoli/how-to-handle-click-events-on-ar-js-f397ea5994d)
-* [10 tips to enhance your AR.js performances](https://medium.com/@nicolcarpignoli/10-tips-to-enhance-your-ar-js-app-8b44c6faffca)
+* [10 tips to enhance your AR.js performances](https://medium.com/@nicolcarpignoli/10-tips-to-enhance-your-ar-js-app-8b44c6faffca)
 
 [Check my Medium page/follow me](https://medium.com/@nicolcarpignoli). More articles upcoming.
 
