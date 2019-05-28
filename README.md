@@ -12,6 +12,8 @@ Working example of click events handling. Disclaimer: not production ready, it f
 - [AR.js experimental (not stable) (`ar-experimental/`)](https://github.com/nicolocarpignoli/nicolocarpignoli.github.io/tree/master/ar-experimental)
 I use this folder for experiments, also as a sandbox for snippets for my Medium articles. Don't use this code, really :)
 
+Don't mind other folders, they are temporary (used for speeches and similar stuff).
+
 ## Articles
 
 * [Introduction to AR.js](https://medium.com/@nicolcarpignoli/ar-js-the-simplest-way-to-get-cross-browser-augmented-reality-on-the-web-10cbc721debc)
